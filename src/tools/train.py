@@ -39,5 +39,7 @@ def process_dataset(dataset):
   return ret
 
 if __name__ == '__main__':
-  dataset = data.readBeijingAq('../../data/beijing_17_18_aq.csv')
+  #dataset = data.readBeijingAq('../../data/beijing_17_18_aq.csv')
+  #train_interface(dataset, 'linear regression')
+  dataset = data.readLondonAq('../../data/London_historical_aqi_forecast_stations_20180331.csv')
   train_interface(dataset, 'linear regression')
